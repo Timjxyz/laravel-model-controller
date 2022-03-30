@@ -1,0 +1,29 @@
+table{
+   border-collapse: collapse;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+th{
+    width: calc(100% / 5);
+    text-align: center;
+    background-color: rgb(0, 89, 255);
+}
+tbody{
+    td:nth-of-type(even){
+        height: 30px;
+        background-color: rgb(100, 154, 197);
+        color: #fff;
+    
+    }
+    td:nth-of-type(odd){
+        height: 20px;
+        background-color: rgb(64, 52, 233);
+        color: #fff;
+    
+    }
+    
+
+}

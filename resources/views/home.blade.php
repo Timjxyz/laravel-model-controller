@@ -3,12 +3,29 @@
 @section('pageTitle', 'Movies')
 
 @section('content')
-    <ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th> Titolo</th>
+                <th>Titolo Originale</th>
+                <th>Nazionalità Film</th>
+                <th>Data di uscita</th>
+                <th>Voto ricevuto</th>
+            </tr>
+        </thead>
         @foreach ($movies as $movie)
-            <li>
-                {{$movie->title}} - {{$movie->original_title}} - {{$movie->nationality}} - {{$movie->date}} - {{$movie->vote}}
-            </li>
+        <tbody>
+            <tr>
+                <td>{{$movie->title}}</td>
+                <td>{{$movie->original_title}}</td>
+                <td>{{$movie->nationality}}</td>
+                <td>{{$movie->date}}</td>
+                <td>{{$movie->vote}}</td>
+            </tr>
+        </tbody>
         @endforeach
-    </ul>
+    </table>
+   
 @endsection
 

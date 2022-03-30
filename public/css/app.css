@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+th {
+  width: 20%;
+  text-align: center;
+  background-color: #0059ff;
+}
+
+tbody td:nth-of-type(even) {
+  height: 30px;
+  background-color: #649ac5;
+  color: #fff;
+}
+
+tbody td:nth-of-type(odd) {
+  height: 20px;
+  background-color: #4034e9;
+  color: #fff;
+}
+
