@@ -9,7 +9,9 @@ class PageController extends Controller
     public function index(){
         
         $movies = Movie::all();
-        return view('home', compact('movies'));
         
+        $ratings = Movie::where('vote', '>=', 9)->get();
+        
+        return view('home', compact('movies','ratings'));
     }
 }

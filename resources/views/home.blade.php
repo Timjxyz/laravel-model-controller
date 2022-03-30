@@ -26,6 +26,15 @@
         </tbody>
         @endforeach
     </table>
+
+    <ul>
+        @foreach ($ratings as $rating )
+            <li>
+               Titolo Film: {{$movie->title}} Voto: {{$rating->vote}}
+            </li>
+        @endforeach
+        
+    </ul>
    
 @endsection
 
